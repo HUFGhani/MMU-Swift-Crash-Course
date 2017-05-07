@@ -36,21 +36,40 @@ class NumbersTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         switch section {
         case 0:
-            return 1
+            return 5
+        case 1:
+            return 10
+        case 2 :
+            return 15
         default:
-            <#code#>
+            return 0
+            
         }
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MMUCell", for: indexPath) as! NumberTableViewCell
 
         // Configure the cell...
-
+        let s : String
+        switch indexPath.section {
+        case 0:
+            s = "A"
+        case 1:
+            s = "B"
+        case 2:
+            s = "C"
+        default:
+            s = "z"
+        }
+        
+       
+        cell.Sectionlabel.text = s
+        cell.RowLabel.text = indexPath.row.description
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
