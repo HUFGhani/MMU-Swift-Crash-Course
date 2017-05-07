@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Task 10 - Advanced
+//  Task 10
 //
 //  Created by Hamza Ghani on 07/05/2017.
 //  Copyright © 2017 Hamza Ghani. All rights reserved.
