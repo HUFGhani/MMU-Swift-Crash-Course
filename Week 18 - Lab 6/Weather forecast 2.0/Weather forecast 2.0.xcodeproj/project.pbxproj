@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A3A97D31EC77F8A00FE55B7 /* MoreInforViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A97D21EC77F8A00FE55B7 /* MoreInforViewController.swift */; };
+		7A3A97D51EC788F800FE55B7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3A97D41EC788F800FE55B7 /* SettingsViewController.swift */; };
 		7A4449721EC75CDF0026BE9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4449711EC75CDF0026BE9E /* AppDelegate.swift */; };
 		7A4449741EC75CDF0026BE9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4449731EC75CDF0026BE9E /* ViewController.swift */; };
 		7A4449771EC75CDF0026BE9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A4449751EC75CDF0026BE9E /* Main.storyboard */; };
@@ -14,9 +16,12 @@
 		7A44497C1EC75CDF0026BE9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A44497A1EC75CDF0026BE9E /* LaunchScreen.storyboard */; };
 		7A4449841EC75D400026BE9E /* WeatherForcastTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4449831EC75D400026BE9E /* WeatherForcastTableViewController.swift */; };
 		7A4449861EC75DE20026BE9E /* Hourly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4449851EC75DE20026BE9E /* Hourly.swift */; };
+		7A4449881EC760000026BE9E /* WeatherForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4449871EC760000026BE9E /* WeatherForecastTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A3A97D21EC77F8A00FE55B7 /* MoreInforViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInforViewController.swift; sourceTree = "<group>"; };
+		7A3A97D41EC788F800FE55B7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7A44496E1EC75CDF0026BE9E /* Weather forecast 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather forecast 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4449711EC75CDF0026BE9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A4449731EC75CDF0026BE9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		7A44497D1EC75CDF0026BE9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A4449831EC75D400026BE9E /* WeatherForcastTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForcastTableViewController.swift; sourceTree = "<group>"; };
 		7A4449851EC75DE20026BE9E /* Hourly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
+		7A4449871EC760000026BE9E /* WeatherForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecastTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				7A44497D1EC75CDF0026BE9E /* Info.plist */,
 				7A4449831EC75D400026BE9E /* WeatherForcastTableViewController.swift */,
 				7A4449851EC75DE20026BE9E /* Hourly.swift */,
+				7A4449871EC760000026BE9E /* WeatherForecastTableViewCell.swift */,
+				7A3A97D21EC77F8A00FE55B7 /* MoreInforViewController.swift */,
+				7A3A97D41EC788F800FE55B7 /* SettingsViewController.swift */,
 			);
 			path = "Weather forecast 2.0";
 			sourceTree = "<group>";
@@ -142,9 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3A97D31EC77F8A00FE55B7 /* MoreInforViewController.swift in Sources */,
 				7A4449741EC75CDF0026BE9E /* ViewController.swift in Sources */,
+				7A3A97D51EC788F800FE55B7 /* SettingsViewController.swift in Sources */,
 				7A4449841EC75D400026BE9E /* WeatherForcastTableViewController.swift in Sources */,
 				7A4449861EC75DE20026BE9E /* Hourly.swift in Sources */,
+				7A4449881EC760000026BE9E /* WeatherForecastTableViewCell.swift in Sources */,
 				7A4449721EC75CDF0026BE9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +321,7 @@
 				7A4449821EC75CDF0026BE9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

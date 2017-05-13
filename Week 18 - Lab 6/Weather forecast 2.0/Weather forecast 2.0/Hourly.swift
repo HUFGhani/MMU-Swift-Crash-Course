@@ -27,8 +27,8 @@ public struct Hourly{
         precipProbability = json["precipProbability"] as! Double
         temperature = json["temperature"] as! Double
     }
-    
-}
+
+  }
 
 extension Hourly{
     public static func forecasts( _ completion: @escaping ([Hourly]) -> Void ) {
@@ -46,4 +46,21 @@ extension Hourly{
         }
         session.resume()
     }
+    
+    public static func forecastsupdate(_ lat:Double, _ log:Double, _ completion: @escaping ([Hourly]) -> Void ) {
+        let urlString = "https://api.darksky.net/forecast/daef8b9872252b375ea2a954c2a66c17/\(lat),\(log)"
+        let url = URL(string: urlString)
+        var forecasts = [Hourly]()
+        let session = URLSession.shared.dataTask(with:url!) { (data, _, _) in
+            let parsedData = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
+            let hourlyJSON = parsedData?["hourly"] as! [String:Any]
+            for item in hourlyJSON["data"] as! [Any]{
+                let hour = item as! [String:Any]
+                forecasts.append(Hourly(json: hour))
+            }
+            completion(forecasts)
+        }
+        session.resume()
+    }
+    
 }
