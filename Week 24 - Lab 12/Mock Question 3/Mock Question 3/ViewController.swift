@@ -13,6 +13,8 @@ class ViewController: UIViewController ,CLLocationManagerDelegate, MKMapViewDele
     var mmu:Locations?
     var trainStation:Locations?
     
+
+    
     
     @IBOutlet weak var mapView: MKMapView!
     private let locationManager = CLLocationManager()
@@ -39,7 +41,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate, MKMapViewDele
         
         request.destination = MKMapItem(placemark: MKPlacemark(coordinate: (trainStation?.coordinate)!))
         request.requestsAlternateRoutes = true
-        request.transportType = .automobile
+        request.transportType = .walking
         
         let directions = MKDirections(request: request)
         
@@ -72,11 +74,13 @@ class ViewController: UIViewController ,CLLocationManagerDelegate, MKMapViewDele
     
     @IBAction func mmu(_ sender: UIButton) {
         mapView.setCenter((mmu?.coordinate)!, animated: true)
+        
     }
     
     
-    @IBAction func train(_ sender: Any) {
+    @IBAction func train(_ sender: UIButton) {
         mapView.setCenter((trainStation?.coordinate)!, animated: true)
     }
+
 }
 
